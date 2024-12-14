@@ -46,19 +46,19 @@
     </div>
 
     <script>
-        const prevButton = document.getElementById('prev');
-        const nextButton = document.getElementById('next');
+        const prevButton = document.getElementById('next');
+        const nextButton = document.getElementById('prev');
         const carouselImages = document.querySelector('.carousel-images');
         let index = 0;
 
         prevButton.addEventListener('click', () => {
             index = (index > 0) ? index - 1 : carouselImages.children.length - 1;
-            carouselImages.style.transform = `translateX(${-index * 300}px)`;
+            carouselImages.style.transform = `translateX(${-index * 400}px)`;
         });
 
         nextButton.addEventListener('click', () => {
             index = (index < carouselImages.children.length - 1) ? index + 1 : 0;
-            carouselImages.style.transform = `translateX(${-index * 300}px)`;
+            carouselImages.style.transform = `translateX(${-index * 400}px)`;
         });
     </script>
 </body>
