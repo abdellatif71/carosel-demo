@@ -119,4 +119,3 @@ Ein moderner Browser (Chrome, Firefox, Safari, Edge).
 
 Lizenz
 
-Dieses Projekt steht unter der MIT-Lizenz.
