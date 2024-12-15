@@ -113,9 +113,7 @@ nextButton.addEventListener('click', () => {
     carouselImages.style.transform = `translateX(${-index * 300}px)`;
 });
 
-Anforderungen
 
-Ein moderner Browser (Chrome, Firefox, Safari, Edge).
 
-Lizenz
+
 
