@@ -20,7 +20,7 @@ Vor- und Zurück-Navigation über Buttons.
 
 Sanfter Übergang zwischen Bildern.
 
-Verzeichnisstruktur
+
 
 project-folder/
 |-- index.html
