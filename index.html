@@ -44,10 +44,7 @@
     </div>
 
     <script>
-        const prevButton = document.getElementById('next');
-        const nextButton = document.getElementById('prev');
-        const carouselImages = document.querySelector('.carousel-images');
-        let index = 0;
+      
 
         prevButton.addEventListener('click', () => {
             index = (index > 0) ? index - 1 : carouselImages.children.length - 1;
