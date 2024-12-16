@@ -37,6 +37,7 @@
             <img src="image3.jpg" alt="Bild 3">
            
         </div>
+     
         <div class="carousel-buttons">
             <button id="prev">←</button>
             <button id="next">→</button>
@@ -50,6 +51,10 @@
             index = (index > 0) ? index - 1 : carouselImages.children.length - 1;
             carouselImages.style.transform = `translateX(${-index * 300}px)`;
         });
+        const prevButton = document.getElementById('next');
+        const nextButton = document.getElementById('prev');
+        const carouselImages = document.querySelector('.carousel-images');
+        let index = 0;
 
         nextButton.addEventListener('click', () => {
             index = (index < carouselImages.children.length - 1) ? index + 1 : 0;
