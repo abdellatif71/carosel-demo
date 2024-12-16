@@ -56,5 +56,64 @@ Animation:
 
 Ändere die Dauer der Animation, indem du den Wert der CSS-Eigenschaft transition im .carousel-images-Block anpasst.
 
+Beispiel-Code
+
+HTML
+
+<div class="carousel">
+    <div class="carousel-images">
+        <img src="image1.png" alt="Bild 1">
+        <img src="image2.png" alt="Bild 2">
+        <img src="image3.jpg" alt="Bild 3">
+    </div>
+    <div class="carousel-buttons">
+        <button id="prev">←</button>
+        <button id="next">→</button>
+    </div>
+</div>
+
+CSS
+
+.carousel {
+    width: 300px;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 50%;
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel img {
+    width: 300px;
+    height: 200px;
+}
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+JavaScript
+
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+const carouselImages = document.querySelector('.carousel-images');
+let index = 0;
+
+prevButton.addEventListener('click', () => {
+    index = (index > 0) ? index - 1 : carouselImages.children.length - 1;
+    carouselImages.style.transform = `translateX(${-index * 300}px)`;
+});
+
+nextButton.addEventListener('click', () => {
+    index = (index < carouselImages.children.length - 1) ? index + 1 : 0;
+    carouselImages.style.transform = `translateX(${-index * 300}px)`;
+});
+
+
+
 
 
