@@ -50,13 +50,7 @@ Bilder: Ersetze image1.png, image2.png, image3.jpg mit deinen eigenen Bildern. A
 
 Größe des Karussells:
 
-Passe die Breite und Höhe der .carousel und .carousel img Klassen in der CSS-Datei an.
 
-Animation:
-
-Ändere die Dauer der Animation, indem du den Wert der CSS-Eigenschaft transition im .carousel-images-Block anpasst.
-
-Beispiel-Code
 
 HTML
 
